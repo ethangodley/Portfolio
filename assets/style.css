@@ -1,0 +1,76 @@
+.heading{
+    display: flex;
+    padding: 20px;
+}
+.logo {
+    flex: 1;
+    display: inline-block;
+    margin: 0px;
+}
+.navoptions {
+    margin-right: 20px;
+
+}
+
+.navoptions li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+.navoptions li a {
+    text-decoration: none;
+}
+.landing {
+    position: relative;
+}
+.landing img {
+    width: 100%;
+}
+.landing h2 {
+    position: absolute;
+    margin-bottom: 4px;
+    bottom: 0;
+    right: 0;
+    background-color: aqua;
+}
+.content h3{
+    display: inline-block;
+    width: 15%;
+    border: 0px;
+    border-right: 5px;
+    border-style: solid;
+    border-color: black;
+}
+.content p{
+    display: inline-block;
+}
+.aboutMe{
+
+}
+.work{
+
+}
+.resume {
+
+}
+.footing {
+
+}
+.footing h3 {
+    display: inline-block;
+    width: 15%;
+    border: 0px;
+
+    border-style: solid;
+    border-color: black;
+}
+.footing ul{
+    padding: 0;
+    display: inline-block;
+    width: 84%;
+}
+.footing li{
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+}
