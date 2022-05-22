@@ -25,6 +25,7 @@
 }
 .landing img {
     width: 100%;
+    max-height: 300px;
 }
 .landing h2 {
     position: absolute;
@@ -35,8 +36,9 @@
 }
 .content h3{
     display: inline-block;
-    width: 15%;
-    border: 0px;
+    min-width: 15%;
+    max-width: 15%;
+    border: 0;
     border-right: 5px;
     border-style: solid;
     border-color: black;
@@ -47,13 +49,37 @@
 .aboutMe{
 
 }
-.work{
 
+.work{
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+}
+.container #lrgImg {
+    width: 82.5%;
+    max-height: 25%;
+    margin: 25px;
+    border: 10px;
+    border: solid;
+    border-color: blue;
+}
+.container #galImg {
+    height: 30%;
+    width: 40%;
+    border: 10px;
+    margin: 10px;
+    border: solid;
+    border-color: blue; 
 }
 .resume {
-
-}
-.footing {
 
 }
 .footing h3 {
