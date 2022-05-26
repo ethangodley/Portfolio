@@ -7,6 +7,8 @@
 
 ##### This portfolio currently consists of HTML and CSS only, however it is likely javascript will be included in future iterations.
 
+##### This is a link to my website https://ethangodley.github.io/Portfolio/
+
 ##### This is what my project is supposed to look like: 
 ![Expected look of project](./assets/Images/Expected.PNG)
 
