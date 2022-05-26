@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Initialization of website and linking to CSS documents-->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,7 +10,9 @@
         <link rel="stylesheet" href="./assets/style.css">
         <title>Portfolio</title>
     </head>
+    <!--All visible content of website contained within body element -->
     <body>
+        <!--Content within header is all within the top navigation bar of the website-->
         <header class = "heading">
             <h1 class = "logo">Ethan Godley</h1>
             <nav class="navoptions">
@@ -29,21 +32,29 @@
                 </ul>
             </nav>
         </header>
+        <!--Content within the below section consists of the landing image and subtitle of the website, seperating the nav bar and the content-->
         <section class = "landing">
             <img src = "./assets/Images/banner.png" alt = "Landing image displaying binary">
             <h2 id="subtitle">Welcome to my Portfolio</h2>
         </section>
+        <!--Main information of page contained within main element-->
         <main class = "content">
+            <!--The below section contains information about the author and a portrait of the author-->
             <section class = "aboutMe" id="aboutMe">
                 <h3>About Me</h3>
                 <article class="aboutMeContainer">
                     <img id = "portrait" src="./assets/Images/portrait.jpg" alt="Portrait of author">
-                    <p>This section will be all about me</p>
+                    <p>My name is Ethan Godley, a Junior coder hoping to kickstart my career in web development. 
+                        I have experience working with a large varity of languages used in both web development and 
+                        software engineering. I have created this portfolio website with the purpose of displaying my previous projects
+                        for all to see.
+                    </p>
                 </article>
             </section>
+            <!--The below section consists of an interactive image gallery where the author can navigate to different projects completed by the author -->
             <section class = work id = "work">
                 <h3>Work</h3>
-                    <article class = "workContainer">
+                    <div class = "workContainer">
                         <div class = "bigImg">
                             <a href = "assets/placeholder.html">
                                 <img src="./assets/Images/calculator.png" alt = "A calculator">
@@ -74,8 +85,9 @@
                             </a>
                             <div class="imgLabel">Timer</div>
                         </div>
-                    </article>
+                    </div>
             </section>
+            <!--The below section contains a prompt to view the authors resume in PDF format with a hyperlink-->
             <section class = "resume" id="resume">
                 <h3>Resume</h3>
                 <p class = "resumeContainer"> Please find my resume attached, ready to download
@@ -83,6 +95,7 @@
                 </p>
             </section>
         </main>
+        <!--The information within the footer provides users with the means to contact the author-->
         <footer class = "footing" id="contactMe">
             <h3>Contact Me</h3>
             <ul>

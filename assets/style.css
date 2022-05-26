@@ -1,25 +1,28 @@
+/*Sets overall styling of navigation bar*/
 .heading{
     display: flex;
     padding: 20px;
     background-color:rgb(109, 109, 109) ;
     margin: 10px;
 }
+/*Sets styling of logo/authors name, set to inline to allow navigation options to sit on same line*/
 .logo {
     flex: 1;
     display: inline-block;
     margin: 0px;
 }
-
+/*Sets overall position of navigation options*/
 .navoptions {
     margin-right: 20px;
     margin-top: 8px;
 }
-
+/*Removes list styling, sets to inline so navigation options sit on same line, and sets spacing between options*/
 .navoptions li{
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
+/*Sets color of text and background color of navigation options as well as size of clickable area and curves background box around each navigation option*/
 .navoptions li a {
     text-decoration: none;
     color: black;
@@ -27,17 +30,21 @@
     padding: 10px 5px;
     border-radius: 5%;
 }
+/* places a shadow around navigation options when curser hovers over clickable area */ 
 .navoptions li a:hover {
     box-shadow: 0 0 5px black;
 }
+/*Sets landing container to relative to allow caption to sit on image, sets margin around container for visual purposes*/
 .landing {
     margin: 10px;
     position: relative;
 }
+/*Sets width and height of landing image, width is relative to container*/
 .landing img {
     width: 100%;
     max-height: 300px;
 }
+/*Sets position of caption to absolute to allow caption to sit on top of image. position to bottom right of image, sets background color of caption*/
 .landing h2 {
     position: absolute;
     margin-bottom: 3px;
@@ -45,6 +52,7 @@
     right: 0;
     background-color: aqua;
 }
+/*Sets styling of all headings within main body of web page*/
 .content h3{
     display: inline-block;
     text-align: right;
@@ -54,39 +62,52 @@
     border: 0;
     border-right: 5px solid;
 }
+/*Sets all <p> tags within content class to inline so that they sit on same line as other content*/
 .content p{
     display: inline-block;
 }
+/*Sets container for about me section of website, sets to take up 100% width of page and sets to flex for flexbox styling accessibility */
 .aboutMe {
     display: flex;
     width: 100%;
 }
+/*Sets container for about me image and text to sit inside. Sets to flex for flexbox styling accessibility ans sets height and width of container
+sets content to overflow to next line if it cant fit on one line*/
 .aboutMeContainer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 200px;
 }
+/*Sets size and position of portrait within parent container*/
 .aboutMeContainer #portrait {
+    flex-wrap: wrap;
     height: 80%;
     width: auto;
     margin: 20px;
     padding-left: 50px;
 }
+/*Sets position of text within parent container and sets text to flow to next line when container width exceeded*/
 .aboutMeContainer p {
     margin: 20px;
     flex-wrap: wrap;
+    width: 50%;
 }
+/*Creates container for work section of website and sets to flex for flexbox styling accessibility*/
 .work{
     display: flex;
     width: 100%;
 }
+/*Creates container for interactive image gallery containing pprtfolio pieces to sit inside
+positions content to horizontal center of container and sets to flex for flexbox styling accessibility*/
 .workContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
+/*Creates container for actual image. Sets width, height, border color, border style, and border weight of large portfolio image
+sets position to relative to allow caption to sit on top of image. Sets margin for visual purposes*/
 .bigImg{ 
     width: 96%;
     height: 25%;
@@ -94,10 +115,13 @@
     margin: 1.5%;
     position: relative;
 }
+/*Sets width and height of image to fill image container*/
 .bigImg a img{
     width: 100%;
     height: 100%;
 }
+/*Creates container for actual image. Sets width, height, border color, border style, and border weight of smaller portfolio images
+sets position to relative to allow caption to sit on top of images. Sets margin for visual purposes*/
 .smallImg {
     width: 45%;
     height: 30%;
@@ -105,6 +129,8 @@
     border: 3px solid blue;
     position: relative;
 }
+/*Sets position of captions to absolute so they sit on top of images, sets font size and background color of images
+sets position of captions to bottom right of images*/
 .imgLabel{
     position: absolute;
     bottom: 0;
@@ -112,13 +138,14 @@
     background: aqua;
     font-size: 1.5rem;
 }
+/*Sets width and height of images to fill image containers, sets to flex wrap to allow images to position correctly*/
 .smallImg a img{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
-
+/*bigImg:hover and smallImg:hover changes the border color and adds a shadow to portfolio images when curser hovers over images*/
 .bigImg:hover {
     border: 5px solid;
     border-color: blueviolet;
@@ -129,20 +156,22 @@
     border-color: blueviolet;
     box-shadow: 0 0 8px cyan;
 }
+/*Sets container for resume section of website, sets width to 100% of page and sets bottom padding for visual purposes
+sets to flex to allow for flexbox styling purposes*/
 .resume {
     display: flex;
     width: 100%;
-    align-items: center;
     padding-bottom: 20px;
 }
-
+/*Sets margin on text within resume container*/
 .resume p {
     margin-left: 20px
 }
-
+/*Sets color of footer bar at bottom of page*/
 .footing {
     background-color:rgb(109, 109, 109) ;
 }
+/*Sets styling of heading "Contact Me" within footer*/
 .footing h3 {
     display: inline-block;
     width: 15%;
@@ -152,19 +181,25 @@
     border: 0;
     border-right: 5px solid;
 }
+/*Sets width of conmtact options
+sets to inline so contact options sit on same line as header*/
 .footing ul{
     padding: 0;
     display: inline-block;
     width: 82.5%;
 }
+/*aligns contact options to center of container, sets to inline so contact options sit next to eachother
+sets width of each contact option*/
 .footing li{
     display: inline-block;
     text-align: center;
     width: 24%;
 }
+/*Sets text color of navigation options*/
 .footing li a {
     color: black;
 }
+/*Changes sizing of content and adjusts positioning of content on page once screen is below 700px to make website responsive for smaller devices*/
 @media only screen and (max-width: 700px) {
 
     .bigImg {
